@@ -28,7 +28,7 @@ Improved incident response capabilities by analyzing real-world attack scenarios
 
 - Vultr: I deployed and managed a virtual private server to host honeypots, ensuring scalability and network isolation. 
 - TPOT: I implemented a multi-honeypot environment using TPOT (Docker-based) to simulate a variety of attack vectors, including SSH (Cowrie), malware capture (Dionaea), and web application exploits (Glastopf).
-- ELK Stack (Elasticsearch, Logstash, Kibana): I utilized the ELK stack to collect, store, and visualize attack data from honeypots in real time.
+- ELK Stack (Elasticsearch, Logstash, Kibana): I utilized the ELK stack to collect, store, and visualize attack data from honeypots in real-time.
 - Firewall: I configured Vultr firewalls to restrict access and ensure proper isolation of honeypots.
 - Docker: I utilized Docker to containerize the honeypots.
 - Ubuntu Linux: I used Ubuntu Linux as the base operating system for the honeypots. Its compatibility with Docker and TPOT made it ideal for setting up and managing multiple honeypots in the cloud environment.
@@ -36,7 +36,7 @@ Improved incident response capabilities by analyzing real-world attack scenarios
 
 ## Steps
 ### Provisioned the VPS: 
-I deployed a new Virtual Private Server (VPS) on Vultr, selecting Ubuntu 22.04 x64 with 8GB+ RAM and 160GB of storage, meeting the resource requirements for T-Pot. Also set up the firewall to make sure I only had access to the VPS at this point.
+I deployed a new Virtual Private Server (VPS) on Vultr, selecting Ubuntu 22.04 x64 with 8GB+ RAM and 160GB of storage, meeting the resource requirements for T-Pot. Also, set up the firewall to make sure I only had access to the VPS at this point.
 
 See below: VPS computing type and location.
 ![image](https://github.com/user-attachments/assets/91c40bd5-f210-4a66-93b5-d5b0ccffdc66)
@@ -84,7 +84,7 @@ cd tpotce
 
 ### Ran the T-Pot Installer: 
 I executed the T-Pot installation script (env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/install.sh)"
-), following the prompts to configure the honeypot services and deploy the system. But was given an error that it cannot be isntalled with the root user. I then created a user from my initials (jkzh), gave permissions, and switched user. Once doing so I was able to install T-pot sucessfully. 
+), following the prompts to configure the honeypot services and deploy the system. But I was given an error that it cannot be installed with the root user. I then created a user from my initials (jkzh), gave permissions, and switched user. Once doing so, I was able to install T-pot successfully. 
 
 See below: Failed attempt at installation. 
 
@@ -92,7 +92,7 @@ See below: Failed attempt at installation.
 
 
 
-See below: Creatiion of the new user account.
+See below: Creation of the new user account.
 
 ![image](https://github.com/user-attachments/assets/8f990f81-420a-40a2-a8da-0cd1417d8baf)
 
